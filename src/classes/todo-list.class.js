@@ -16,7 +16,6 @@ export class TodoList {
 
   marcarcompletado(id) {
     for (const todo of this.todos) {
-      console.log(id, todo.id);
       if (todo.id == id) {
         todo.completado = !todo.completado;
         this.guardarLocalStorage();
